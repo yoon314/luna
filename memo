@@ -1,0 +1,2 @@
+python -m uvicorn app.main:app --reload
+celery -A app.tasks.celery_app worker --loglevel=info
